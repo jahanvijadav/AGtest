@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> </head>
+
+<body ng-app="productlist-cardApp">
+  <div ng-controller="cardController" ng-init="init()" ng-cloak>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="input-group" id="search">
+          <div class="input-group-addon">
+            <i class="glyphicon glyphicon-search"></i>
+          </div>
+          <input type="text" class="form-control" ng-model="productSearchTerm" placeholder="Search products..."> </div>
+      </div>
+    </div>
+    <div class='md-padding' layout="row" layout-wrap>
+        <md-card  flex="45" flex-sm="90" ng-repeat="product in products | filter: productSearchTerm">
+          <img class="center-block cart-image" ng-src="images/product-image.png"   alt="From Soulmist Collection">
+          <md-card-header>
+            <md-card-avatar>
+            </md-card-avatar>
+            <md-card-header-text>
+              <span class="md-title"></span>
+              <span class="md-subhead"></span>
+            </md-card-header-text>
+          </md-card-header>
+          <md-card-title>
+            <md-card-title-text>
+              <h4>{{product.sku}}</h4>
+              <span class="md-headline">{{product.title}}</span>
+              <p>{{product.price | currency:"₹ "}}</p>
+            </md-card-title-text>
+          </md-card-title>
+          <md-card-actions layout="row" layout-align="start center">
+            <md-button class="md-raised">Buy Now</md-button>
+            <md-button class="md-raised">Try at Home</md-button>
+            <md-card-icon-actions>
+              <md-button class="md-icon-button" aria-label="icon">
+                <md-icon class="material-icons">add</md-icon>
+              </md-button>
+            </md-card-icon-actions>
+          </md-card-actions>
+          <md-card-content>
+            <!-- <p>Diamond Necklace In 18Kt Gold (19.6 gram) with Diamonds (0.5720 Ct)</p> -->
+            <p>{{product.descrpt}}</p>
+          </md-card-content>
+        </md-card>
+    </div>
+  </div>
+</body>
+
+</html>

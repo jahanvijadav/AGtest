@@ -1,0 +1,33 @@
+
+[
+    {
+        "sku" : "PD691",
+        "title" : "THE SUMIYA NECKLACE",
+        "price" : " 130949",
+        "descrpt":"Diamond Necklace In 18Kt Gold (19.6 gram) with Diamonds (0.5720 Ct)"
+    },
+    {
+        "sku" : "PD692",
+        "title" : "THE SUBLIME BEAUTY NECKLACE",
+        "price" : "81,310",
+        "descrpt":"Diamond And White Pearl Necklace In 18Kt Gold (21.5 gram) with Diamonds (0.0750 Ct)"
+    },
+    {
+        "sku" : "PD693",
+        "title" : "THE SKEIN NECKLACE",
+        "price" : "1,03,423",
+        "descrpt":"Diamond Necklace In 18Kt Gold (14.7 gram) with Diamonds (0.4880 Ct)"
+    },
+    {
+        "sku" : "PD694",
+        "title" : "THE ELLESSA NECKLACE",
+        "price" : "80,640",
+        "descrpt":"Diamond And White Pearl Necklace In 18Kt White Gold (9.62 gram) with Diamonds (0.5750 Ct)"
+    },
+    {
+        "sku" : "PD696",
+        "title" : "THE LADY STARLIGHT NECKLACE",
+        "price" : "83,355",
+        "descrpt":"Diamond Necklace In 18Kt Rose Gold (10 gram) with Diamonds (0.4610 Ct)"
+    }
+]

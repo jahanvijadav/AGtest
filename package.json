@@ -1,0 +1,24 @@
+{
+  "name": "angular-test",
+  "private": true,
+  "version": "0.0.0",
+  "description": "test AngularJS",
+  "repository": "https://github.com/angular/angular-shopping",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server ./app -a localhost -p 8000 -c-1"
+  },
+  "dependencies": {
+    "@angular/animations": "^5.2.10",
+    "@angular/cdk": "^5.2.5",
+    "@angular/common": "^5.2.10",
+    "@angular/core": "^5.2.10",
+    "@angular/material": "^5.2.5",
+    "hammerjs": "^2.0.8",
+    "rxjs": "^5.5.0",
+    "zone.js": "^0.8.4"
+  }
+}

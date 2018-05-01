@@ -1,0 +1,28 @@
+
+[
+    {
+        "sku" : "PC175",
+        "title" : "THE REBEL AT HEART RING",
+        "price" : "44111"
+    },
+    {
+        "sku" : "PT596",
+        "title" : "THE MOKYA RING",
+        "price" : "43638"
+    },
+    {
+        "sku" : "PD695",
+        "title" : "THE SPELLBOUND BAND FOR HIM",
+        "price" : "50603"
+    },
+    {
+        "sku" : "PD688",
+        "title" : "THE ROYAL AND RESOLUTE RING",
+        "price" : "53381"
+    },
+    {
+        "sku" : "PD689",
+        "title" : "THE ANTOINE RING",
+        "price" : "39101"
+    }
+]

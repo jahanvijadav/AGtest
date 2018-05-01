@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel = "stylesheet"
+    href = "https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+ 
+  <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+ <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+ <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+ <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+ <script src = "https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+
+
+  <!-- Product List Module -->
+  <script src="product-list/product-list.module.js"></script>
+  <script src="product-list/product-list.controller.js"></script>
+  
+  <!-- Product List Module -->
+  <script src="productlist-card/productlist-card.controller.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="app.module.js"></script>
+</head>
+
+<body ng-app="tabsDemoDynamicHeight">
+        <div ng-cloak>
+                <md-content>
+                  <md-tabs md-dynamic-height md-border-bottom>
+                    <md-tab label="RINGS">
+                      <md-content class="md-padding">
+                        <h3>RINGS</h3>
+                        <div ng-include="'product-list/product-list.html'"></div>
+                      </md-content>
+                    </md-tab>
+                    <md-tab label="NECKLACES">
+                      <md-content class="md-padding">
+                        <h3>NECKLACES</h3>
+                        <div ng-include="'productlist-card/productlist-card.html'"></div>
+                        
+                      </md-content>
+                    </md-tab>
+                    <md-tab label="BANGLES">
+                      <md-content class="md-padding">
+                        <h3>BANGLES</h3>
+                        <p>TEST 3</p>
+                      </md-content>
+                    </md-tab>
+                  </md-tabs>
+                </md-content>
+        </div>
+</body>
+
+</html> 

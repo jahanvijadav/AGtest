@@ -1,0 +1,65 @@
+<div class="container" ng-controller="ProductListController" ng-init="init()">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="input-group" id="search">
+                    <div class="input-group-addon">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </div>
+                    <input type="text" class="form-control" ng-model="productSearchTerm" placeholder="Search products..." />
+                </div>
+            </div>
+        </div>
+        <div class='padding' layout="row" >
+            <div flex="33" flex-sm="100" ng-repeat="product in products | filter: productSearchTerm">
+                <div class="product-summary">
+                    <img class="center-block product-img" ng-src="images/product-image.png">
+                    <div class="product-info">
+                        <ul class="list-unstyled text-center">
+                            <li>
+                                <small>{{product.sku}}</small>
+                            </li>
+                            <li>
+                                <h5 class="text-primary">{{product.title}}</h5>
+                            </li>
+                            <li>
+                                <h6>{{product.price | currency:"₹ "}}</h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- <div class="container" ng-controller="ProductListController" ng-init="init()">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="input-group" id="search">
+                <div class="input-group-addon">
+                    <i class="glyphicon glyphicon-search"></i>
+                </div>
+                <input type="text" class="form-control" ng-model="productSearchTerm" placeholder="Search products..." />
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class=" md-col-3" ng-repeat="product in products | filter: productSearchTerm">
+            <div class="product-summary">
+                <img class="center-block product-img" ng-src="images/product-image.png">
+                <div class="product-info">
+                    <ul class="list-unstyled text-center">
+                        <li>
+                            <small>{{product.sku}}</small>
+                        </li>
+                        <li>
+                            <h5 class="text-primary">{{product.title}}</h5>
+                        </li>
+                        <li>
+                            <h6>{{product.price | currency:"₹ "}}</h6>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
